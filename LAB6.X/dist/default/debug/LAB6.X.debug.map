@@ -1,0 +1,179 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Nov 07 09:23:13 2024
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x00038a
+                   .cinit    romdata   0x00038a    program   0x000002
+                    dbgP0       code   0x007dc0    program   0x000240
+.config_300001_BUILD/DEFAULT/DEBUG/BONUS.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/BONUS.O    romdata   0x300003    program   0x000001
+.config_300006_BUILD/DEFAULT/DEBUG/BONUS.O    romdata   0x300006    program   0x000001
+                    dbgD0      udata   0x0005f4       data   0x00000c
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00038b      
+                            0x007dc0    0x007fff      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+                            0x300006    0x300006      
+            1487 out of 33048 program addresses used, program memory utilization is 4%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 _10LOOP1   0x00013e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _10LOOP2   0x00013a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _11LOOP1   0x000158    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _11LOOP2   0x000154    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _12LOOP1   0x000172    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _12LOOP2   0x00016e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _13LOOP1   0x00018c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _13LOOP2   0x000188    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _14LOOP1   0x0001ac    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _14LOOP2   0x0001a8    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _15LOOP1   0x0001c6    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _15LOOP2   0x0001c2    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _16LOOP1   0x0001e0    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _16LOOP2   0x0001dc    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _17LOOP1   0x0001fa    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _17LOOP2   0x0001f6    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _18LOOP1   0x000216    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _18LOOP2   0x000212    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _19LOOP1   0x000230    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _19LOOP2   0x00022c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _1LOOP1   0x000024    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _1LOOP2   0x000020    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _20LOOP1   0x00024a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _20LOOP2   0x000246    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _21LOOP1   0x000264    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _21LOOP2   0x000260    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _22LOOP1   0x000284    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _22LOOP2   0x000280    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _23LOOP1   0x00029e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _23LOOP2   0x00029a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _24LOOP1   0x0002ba    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _24LOOP2   0x0002b6    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _25LOOP1   0x0002d4    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _25LOOP2   0x0002d0    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _26LOOP1   0x0002f0    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _26LOOP2   0x0002ec    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _27LOOP1   0x00030a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _27LOOP2   0x000306    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _28LOOP1   0x000326    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _28LOOP2   0x000322    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _29LOOP1   0x000340    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _29LOOP2   0x00033c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _2LOOP1   0x00004e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _2LOOP2   0x00004a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _30LOOP1   0x00035c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _30LOOP2   0x000358    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _31LOOP1   0x000376    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _31LOOP2   0x000372    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _3LOOP1   0x000068    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _3LOOP2   0x000064    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _4LOOP1   0x000088    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _4LOOP2   0x000084    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _5LOOP1   0x0000a2    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _5LOOP2   0x00009e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _6LOOP1   0x0000c0    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _6LOOP2   0x0000bc    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _7LOOP1   0x0000da    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _7LOOP2   0x0000d6    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _8LOOP1   0x0000f8    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _8LOOP2   0x0000f4    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _9LOOP1   0x000112    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _9LOOP2   0x00010e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                     init   0x000000    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                notfirst1   0x000080    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                notfirst2   0x0001a4    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                   state0   0x000014    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                   state1   0x00003c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  state12   0x0000b4    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                   state2   0x000126    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  state22   0x00020c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     init   0x000000    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                   state0   0x000014    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _1LOOP2   0x000020    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _1LOOP1   0x000024    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                   state1   0x00003c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _2LOOP2   0x00004a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _2LOOP1   0x00004e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _3LOOP2   0x000064    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _3LOOP1   0x000068    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                notfirst1   0x000080    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _4LOOP2   0x000084    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _4LOOP1   0x000088    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _5LOOP2   0x00009e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _5LOOP1   0x0000a2    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  state12   0x0000b4    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _6LOOP2   0x0000bc    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _6LOOP1   0x0000c0    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _7LOOP2   0x0000d6    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _7LOOP1   0x0000da    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _8LOOP2   0x0000f4    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _8LOOP1   0x0000f8    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _9LOOP2   0x00010e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  _9LOOP1   0x000112    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                   state2   0x000126    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _10LOOP2   0x00013a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _10LOOP1   0x00013e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _11LOOP2   0x000154    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _11LOOP1   0x000158    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _12LOOP2   0x00016e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _12LOOP1   0x000172    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _13LOOP2   0x000188    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _13LOOP1   0x00018c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                notfirst2   0x0001a4    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _14LOOP2   0x0001a8    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _14LOOP1   0x0001ac    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _15LOOP2   0x0001c2    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _15LOOP1   0x0001c6    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _16LOOP2   0x0001dc    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _16LOOP1   0x0001e0    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _17LOOP2   0x0001f6    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _17LOOP1   0x0001fa    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                  state22   0x00020c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _18LOOP2   0x000212    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _18LOOP1   0x000216    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _19LOOP2   0x00022c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _19LOOP1   0x000230    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _20LOOP2   0x000246    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _20LOOP1   0x00024a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _21LOOP2   0x000260    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _21LOOP1   0x000264    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _22LOOP2   0x000280    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _22LOOP1   0x000284    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _23LOOP2   0x00029a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _23LOOP1   0x00029e    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _24LOOP2   0x0002b6    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _24LOOP1   0x0002ba    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _25LOOP2   0x0002d0    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _25LOOP1   0x0002d4    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _26LOOP2   0x0002ec    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _26LOOP1   0x0002f0    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _27LOOP2   0x000306    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _27LOOP1   0x00030a    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _28LOOP2   0x000322    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _28LOOP1   0x000326    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _29LOOP2   0x00033c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _29LOOP1   0x000340    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _30LOOP2   0x000358    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _30LOOP1   0x00035c    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _31LOOP2   0x000372    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+                 _31LOOP1   0x000376    program     static C:\Users\wanga\MPLABXProjects\LAB6.X\bonus.asm
+
+

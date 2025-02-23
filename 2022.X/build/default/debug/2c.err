@@ -1,0 +1,11 @@
+Warning[205] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 7 : Found label after column 1. (LIST_INIT)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 28 : Found label after column 1. (i)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 29 : Found label after column 1. (j)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 37 : Found label after column 1. (TWO_SUM)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 38 : Found label after column 1. (loop)
+Warning[202] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 41 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 45 : Found label after column 1. (next)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 58 : Found label after column 1. (find)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 66 : Found label after column 1. (nothing)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\2022.X\2C.ASM 68 : Found label after column 1. (exit)

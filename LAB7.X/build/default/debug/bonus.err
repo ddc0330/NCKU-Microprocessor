@@ -1,0 +1,8 @@
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\BONUS.ASM 61 : Found opcode in column 1. (GOTO)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\BONUS.ASM 142 : Found opcode in column 1. (RETFIE)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\BONUS.ASM 145 : Found label after column 1. (COUNTER)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\BONUS.ASM 146 : Found label after column 1. (TEMP)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\BONUS.ASM 147 : Found label after column 1. (STATEL)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\BONUS.ASM 148 : Found label after column 1. (STATET)
+Warning[202] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\BONUS.ASM 167 : Argument out of range.  Least significant bits used.
+Warning[205] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\BONUS.ASM 190 : Found directive in column 1. (end)

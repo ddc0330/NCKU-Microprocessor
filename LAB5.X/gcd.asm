@@ -1,0 +1,78 @@
+#include "xc.inc"
+GLOBAL	_gcd
+PSECT mytext,local,class = CODE ,reloc = 2
+;[0x001] =1200_lowbit [0x002] =1200_high_bit [0x003] =180_lowbit [0x004] =180_highbit 
+
+
+
+
+_gcd:
+	    ah          EQU 0x10            ; ah register stores high byte of a
+	    al          EQU 0x11            ; al register stores low byte of a
+	    bh          EQU 0x20            ; bh register stores high byte of b
+	    bl          EQU 0x21            ; bl register stores low byte of b
+	    MOVFF 0x01, al       ; Load first number's low byte into al
+	    MOVFF 0x02, ah       ; Load first number's high byte into ah
+	    MOVFF 0x03, bl       ; Load second number's low byte into bl
+	    MOVFF 0x04, bh       ; Load second number's high byte into bh
+
+gcd_loop:    
+	    ; ?? a ? b ??? (???????)
+	    MOVF bh, W           ; Load high byte of a into WREG
+	    CPFSEQ ah            ; Compare ah == bh, skip next if equal
+	    GOTO compare_high    ; ??????????????
+
+compare_low:
+	    ; ??????????????
+	    MOVF bl, W           ; Load low byte of a into WREG
+	    CPFSLT al            ; Compare al < bl, skip next if true
+	    GOTO a_larger        ; ?? al > bl???? a_larger
+	    GOTO b_larger        ; ?? al < bl???? b_larger
+
+compare_high:
+	    CPFSLT ah            ; ?? ah < bh
+	    GOTO a_larger        ; ?? ah < bh???? b_larger
+	    GOTO b_larger        ; ?? ah > bh???? a_larger
+a_larger:
+	    ; a > b??? a = a - b
+	    CALL subtract_b_from_a
+	    GOTO gcd_check_equal ; ?? a == b
+
+b_larger:
+	    ; b > a??? b = b - a
+	    CALL subtract_a_from_b
+	    GOTO gcd_check_equal ; ?? a == b
+
+gcd_check_equal:
+	    ; ???? a == b??????????
+	    MOVF ah, W           ; ????????
+	    CPFSEQ bh            ; ?? ah != bh???
+	    GOTO gcd_loop        ; ???????????
+	    MOVF al, W           ; ????????
+	    CPFSEQ bl            ; ?? al != bl???
+	    GOTO gcd_loop        ; ???????????
+
+	    ; ?? a == b????? a ? b
+	    MOVFF ah, 0x02       ; ????????
+	    MOVFF al, 0x01       ; ????????
+	    RETURN
+
+subtract_b_from_a:
+	    ; ?? a = a - b???????
+	    MOVF bl, W           ; ? b ???
+	    SUBWF al		   ; a ??? = a ??? - b ???
+	    BTFSS STATUS,0        ;MOVF al, W           ; ??????
+	    DECF ah            ; ??????????? a
+	    MOVF bh, W           ; ? b ???
+	    SUBWF ah          ; a ??? = a ??? - b ???
+	    RETURN
+
+subtract_a_from_b:
+	    ; ?? b = b - a???????
+	    MOVF al, W           ; ? a ???
+	    SUBWF bl           ; b ??? = b ??? - a ???
+	    BTFSS STATUS,0 
+	    DECF bh            ; ??????????? b
+	    MOVF ah, W           ; ? a ???
+	    SUBWF bh           ; b ??? = b ??? - a ???
+	    RETURN

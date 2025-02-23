@@ -1,0 +1,819 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\FINAL.X.debug.o
+intcodelo CODE 0 18 18 54 1 2
+cinit CODE 0 102C 102C 2A 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+intcode_body CODE 0 B28 B28 B8 1 2
+text0 CODE 0 EFA EFA 42 1 2
+text1 CODE 0 1074 1074 1A 1 2
+text2 CODE 0 C8E C8E 84 1 2
+text3 CODE 0 D12 D12 6A 1 2
+text4 CODE 0 FFC FFC 30 1 2
+text5 CODE 0 F3C F3C 42 1 2
+text7 CODE 0 EAA EAA 50 1 2
+text8 CODE 0 D7C D7C 66 1 2
+text10 CODE 0 620 620 37C 1 2
+text11 CODE 0 F7E F7E 40 1 2
+text12 CODE 0 1056 1056 1E 1 2
+text13 CODE 0 108E 108E 1A 1 2
+text14 CODE 0 FBE FBE 3E 1 2
+text15 CODE 0 DE2 DE2 66 1 2
+text16 CODE 0 99C 99C CA 1 2
+text17 CODE 0 E48 E48 62 1 2
+text18 CODE 0 BE0 BE0 AE 1 2
+text19 CODE 0 A66 A66 C2 1 2
+text20 CODE 0 10A8 10A8 2 1 2
+cstackCOMRAM COMRAM 1 3C 3C 25 1 1
+cstackBANK0 BANK0 1 80 80 73 1 1
+temp COMRAM 1 61 61 1 1 1
+bssBANK1 BANK1 1 100 100 64 1 1
+intcode CODE 0 8 8 6 1 2
+smallconst SMALLCONST 0 600 600 20 1 2
+bssCOMRAM COMRAM 1 1 1 3B 1 1
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 6C 6C 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM F3-FF 1
+RAM 164-5F3 1
+SFR F80-F9B 1
+SFR F9D-FD3 1
+SFR FD5-FDA 1
+SFR FE0-FE2 1
+SFR FE8-FEA 1
+SFR FF0-FFC 1
+BANK0 F3-FF 1
+BANK1 164-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5F3 1
+CONST 4-7 1
+CONST E-17 1
+CONST 70-5FF 1
+CONST 10AA-7DBF 1
+SMALLCONST 10AA-7DBF 1
+CODE 4-7 1
+CODE E-17 1
+CODE 70-5FF 1
+CODE 10AA-7DBF 1
+BIGRAM 62-7F 1
+BIGRAM F3-FF 1
+BIGRAM 164-5F3 1
+BIGSFR F80-F9B 1
+BIGSFR F9D-FD3 1
+BIGSFR FD5-FDA 1
+BIGSFR FE0-FE2 1
+BIGSFR FE8-FEA 1
+BIGSFR FF0-FFC 1
+COMRAM 62-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 10AA-7DBF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\FINAL.X.debug.o
+18 intcodelo CODE >109:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+18 intcodelo CODE >1892:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+2E intcodelo CODE >110:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+3C intcodelo CODE >111:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+4A intcodelo CODE >112:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+4C intcodelo CODE >113:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+4E intcodelo CODE >114:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+50 intcodelo CODE >117:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+54 intcodelo CODE >122:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8 intcode CODE >264:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8 intcode CODE >2217:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+10A8 text20 CODE >281:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+10A8 text20 CODE >288:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+A66 text19 CODE >7:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+A66 text19 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+A68 text19 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+A76 text19 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+A7E text19 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+A82 text19 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+A90 text19 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+A98 text19 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+A9C text19 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+AA4 text19 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+AB6 text19 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+ABA text19 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+ABE text19 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+AC4 text19 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+AC6 text19 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+AD4 text19 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+ADA text19 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+AF0 text19 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+AF8 text19 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+AFA text19 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+B00 text19 CODE >36:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+B06 text19 CODE >38:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+B16 text19 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+B1E text19 CODE >40:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+B26 text19 CODE >41:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+BE0 text18 CODE >7:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+BE0 text18 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+BE2 text18 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+BF0 text18 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+BF8 text18 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+BFC text18 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C0A text18 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C12 text18 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C24 text18 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C28 text18 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C2C text18 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C32 text18 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C34 text18 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C42 text18 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C58 text18 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C60 text18 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C66 text18 CODE >29:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C6C text18 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C7C text18 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C84 text18 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+C8C text18 CODE >34:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+E48 text17 CODE >72:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+E4A text17 CODE >73:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+E6E text17 CODE >74:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+E7C text17 CODE >75:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+E80 text17 CODE >76:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+E8E text17 CODE >77:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+E92 text17 CODE >78:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+E96 text17 CODE >79:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EA4 text17 CODE >80:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EA8 text17 CODE >82:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+99C text16 CODE >8:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+99C text16 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+9C0 text16 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+9C6 text16 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+9CA text16 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+A1E text16 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+A52 text16 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+A64 text16 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+DE2 text15 CODE >1177:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+DE2 text15 CODE >1201:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+E00 text15 CODE >1202:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+E08 text15 CODE >1204:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+E14 text15 CODE >1205:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+E18 text15 CODE >1806:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+E24 text15 CODE >1811:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+E46 text15 CODE >1814:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+FBE text14 CODE >1817:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+FBE text14 CODE >1822:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+FC2 text14 CODE >1826:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+FC6 text14 CODE >1830:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+FDA text14 CODE >1826:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+FF2 text14 CODE >1835:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+FFA text14 CODE >1840:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+108E text13 CODE >5:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\printf.c
+108E text13 CODE >9:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\printf.c
+1092 text13 CODE >10:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\printf.c
+10A6 text13 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\printf.c
+1056 text12 CODE >220:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+1056 text12 CODE >221:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+1072 text12 CODE >222:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F7E text11 CODE >84:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F7E text11 CODE >85:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F86 text11 CODE >86:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+FB4 text11 CODE >87:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+FBC text11 CODE >88:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+620 text10 CODE >298:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+620 text10 CODE >305:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+63C text10 CODE >306:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+644 text10 CODE >307:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+660 text10 CODE >308:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+672 text10 CODE >309:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+68E text10 CODE >310:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6A0 text10 CODE >311:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6A8 text10 CODE >312:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6B0 text10 CODE >313:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6B8 text10 CODE >314:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6C0 text10 CODE >315:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6C8 text10 CODE >316:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6D0 text10 CODE >317:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6D8 text10 CODE >318:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6E0 text10 CODE >319:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6E8 text10 CODE >320:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+6F0 text10 CODE >323:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+702 text10 CODE >324:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+71E text10 CODE >325:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+730 text10 CODE >326:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+738 text10 CODE >327:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+740 text10 CODE >328:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+74C text10 CODE >338:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+760 text10 CODE >339:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+77C text10 CODE >340:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+78E text10 CODE >341:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+796 text10 CODE >342:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+79E text10 CODE >343:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+7A6 text10 CODE >344:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+7B2 text10 CODE >353:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+7C6 text10 CODE >354:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+7E2 text10 CODE >355:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+7F4 text10 CODE >356:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+7FC text10 CODE >357:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+804 text10 CODE >358:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+80C text10 CODE >359:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+814 text10 CODE >360:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+820 text10 CODE >368:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+834 text10 CODE >369:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+850 text10 CODE >370:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+862 text10 CODE >371:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+86A text10 CODE >372:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+872 text10 CODE >373:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+87A text10 CODE >374:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+882 text10 CODE >375:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+88A text10 CODE >376:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+896 text10 CODE >383:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8AA text10 CODE >384:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8C6 text10 CODE >385:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8D8 text10 CODE >386:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8E0 text10 CODE >387:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8E8 text10 CODE >388:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8F0 text10 CODE >389:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+8F8 text10 CODE >390:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+900 text10 CODE >391:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+908 text10 CODE >392:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+914 text10 CODE >399:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+928 text10 CODE >400:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+944 text10 CODE >401:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+956 text10 CODE >402:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+95E text10 CODE >403:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+966 text10 CODE >404:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+96E text10 CODE >405:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+976 text10 CODE >406:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+97E text10 CODE >407:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+986 text10 CODE >408:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+98E text10 CODE >409:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+99A text10 CODE >415:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+B28 intcode_body CODE >264:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+B52 intcode_body CODE >265:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+B60 intcode_body CODE >266:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+B72 intcode_body CODE >267:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+B7E intcode_body CODE >268:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+B80 intcode_body CODE >269:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+B90 intcode_body CODE >272:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+B9E intcode_body CODE >273:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+BA2 intcode_body CODE >274:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+BB2 intcode_body CODE >275:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+BB4 intcode_body CODE >277:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D7C text8 CODE >72:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D80 text8 CODE >73:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+DA6 text8 CODE >74:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+DB4 text8 CODE >75:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+DB8 text8 CODE >76:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+DC6 text8 CODE >77:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+DCA text8 CODE >78:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+DCE text8 CODE >79:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+DDC text8 CODE >80:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+DE0 text8 CODE >82:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EAA text7 CODE >90:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EAA text7 CODE >91:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EAE text7 CODE >92:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EDE text7 CODE >93:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EF2 text7 CODE >94:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EF8 text7 CODE >95:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F3C text5 CODE >84:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F3C text5 CODE >85:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F46 text5 CODE >86:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F74 text5 CODE >87:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F7C text5 CODE >88:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+FFC text4 CODE >3:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+FFC text4 CODE >5:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+1000 text4 CODE >6:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+102A text4 CODE >8:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+D12 text3 CODE >97:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D12 text3 CODE >98:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D30 text3 CODE >99:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D44 text3 CODE >100:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D56 text3 CODE >101:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D5A text3 CODE >102:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D68 text3 CODE >104:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D72 text3 CODE >105:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D7A text3 CODE >107:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+C8E text2 CODE >126:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+C8E text2 CODE >128:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+C96 text2 CODE >130:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+C98 text2 CODE >131:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CA0 text2 CODE >132:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CA4 text2 CODE >133:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CA6 text2 CODE >134:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CA8 text2 CODE >135:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CAC text2 CODE >136:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CB4 text2 CODE >137:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CB6 text2 CODE >138:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CB8 text2 CODE >141:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CBA text2 CODE >142:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CBE text2 CODE >143:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CC6 text2 CODE >144:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CCA text2 CODE >146:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CCC text2 CODE >149:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CD0 text2 CODE >150:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CD4 text2 CODE >151:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CD6 text2 CODE >152:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CDA text2 CODE >153:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CDC text2 CODE >156:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CDE text2 CODE >157:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CE0 text2 CODE >158:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CE2 text2 CODE >159:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CE4 text2 CODE >160:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CE6 text2 CODE >161:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CE8 text2 CODE >162:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CEA text2 CODE >163:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CEC text2 CODE >164:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CEE text2 CODE >176:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CF0 text2 CODE >177:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CF2 text2 CODE >181:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CF4 text2 CODE >182:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CF6 text2 CODE >183:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CF8 text2 CODE >184:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CFC text2 CODE >187:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+CFE text2 CODE >188:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D00 text2 CODE >189:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D02 text2 CODE >190:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D04 text2 CODE >191:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D06 text2 CODE >192:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D08 text2 CODE >193:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D0A text2 CODE >194:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D0C text2 CODE >195:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D0E text2 CODE >207:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+D10 text2 CODE >208:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+1074 text1 CODE >417:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+1074 text1 CODE >428:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+108C text1 CODE >430:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EFA text0 CODE >432:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EFA text0 CODE >433:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+EFE text0 CODE >458:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+F24 text0 CODE >459:C:\Users\wanga\MPLABXProjects\FINAL.X\3b.c
+102C cinit CODE >575:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+102C cinit CODE >577:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+102C cinit CODE >580:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+102C cinit CODE >636:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1030 cinit CODE >637:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1032 cinit CODE >638:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1032 cinit CODE >639:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1034 cinit CODE >640:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1036 cinit CODE >641:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1038 cinit CODE >644:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+103C cinit CODE >645:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+103E cinit CODE >646:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+103E cinit CODE >647:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1040 cinit CODE >648:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1042 cinit CODE >649:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1044 cinit CODE >655:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1044 cinit CODE >657:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1046 cinit CODE >658:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1048 cinit CODE >660:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+104A cinit CODE >661:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+104C cinit CODE >662:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+104E cinit CODE >663:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1050 cinit CODE >664:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+1052 cinit CODE >665:C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_x 25 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+___awdiv@counter 40 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+putch@data 80 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\FINAL.X.debug.o
+__Hspace_0 10AA 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hspace_1 164 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+H_ISR@value 5F 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+i2_ClearBuffer F7E 0 CODE 0 text11 dist/default/debug\FINAL.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\FINAL.X.debug.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\FINAL.X.debug.o
+_a0 35 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_a1 33 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_a2 31 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_a3 2F 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_a4 2D 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_a5 2B 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_a6 29 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_a7 27 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/debug\FINAL.X.debug.o
+__end_of_Lo_ISR 6C 0 CODE 0 intcodelo dist/default/debug\FINAL.X.debug.o
+?_vfprintf 4A 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/debug\FINAL.X.debug.o
+_CREN 7D5C 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_LATA F89 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_LATC F8B 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_RCIF 7CF5 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+_main EFA 0 CODE 0 text0 dist/default/debug\FINAL.X.debug.o
+_prec 23 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+btemp 61 0 COMRAM 1 temp dist/default/debug\FINAL.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+___stack_lo 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+start 6C 0 CODE 0 init C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+GetString@str 8C 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+__end_of_button_pressed 10AA 0 CODE 0 text20 dist/default/debug\FINAL.X.debug.o
+__Hpowerup 6C 0 CODE 0 powerup dist/default/debug\FINAL.X.debug.o
+__end_of_vfpfcnvrt E48 0 CODE 0 text15 dist/default/debug\FINAL.X.debug.o
+___awmod@sign 41 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+ttemp5 62 0 COMRAM 1 temp dist/default/debug\FINAL.X.debug.o
+ttemp6 65 0 COMRAM 1 temp dist/default/debug\FINAL.X.debug.o
+ttemp7 69 0 COMRAM 1 temp dist/default/debug\FINAL.X.debug.o
+__accesstop 80 0 ABS 0 - C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+intlevel0 0 0 CODE 0 text C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+intlevel1 0 0 CODE 0 text C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+intlevel2 0 0 CODE 0 text C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+intlevel3 0 0 CODE 0 text C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_MyusartRead EAA 0 CODE 0 text7 dist/default/debug\FINAL.X.debug.o
+_OSCCONbits FD3 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\FINAL.X.debug.o
+wtemp8 62 0 COMRAM 1 temp dist/default/debug\FINAL.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\FINAL.X.debug.o
+___awdiv@sign 41 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\FINAL.X.debug.o
+_vfpfcnvrt DE2 0 CODE 0 text15 dist/default/debug\FINAL.X.debug.o
+_variable_register_changed 620 0 CODE 0 text10 dist/default/debug\FINAL.X.debug.o
+_ADRESH FC4 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_ADRESL FC3 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+___awdiv@dividend 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+_CCPR1L FBE 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\FINAL.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\FINAL.X.debug.o
+main@str 8F 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+_BAUDCONbits FB8 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\FINAL.X.debug.o
+?_printf 4F 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Hintcodelo 6C 0 CODE 0 intcodelo dist/default/debug\FINAL.X.debug.o
+___awdiv@divisor 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__end_of___awdiv B28 0 CODE 0 text19 dist/default/debug\FINAL.X.debug.o
+__end_of___awmod C8E 0 CODE 0 text18 dist/default/debug\FINAL.X.debug.o
+i2putch@data 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__end_ofi2_ClearBuffer FBE 0 CODE 0 text11 dist/default/debug\FINAL.X.debug.o
+_Lo_ISR 18 0 CODE 0 intcodelo dist/default/debug\FINAL.X.debug.o
+set_LED_separately@a 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+set_LED_separately@b 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+set_LED_separately@c 40 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/debug\FINAL.X.debug.o
+start_initialization 102C 0 CODE 0 cinit dist/default/debug\FINAL.X.debug.o
+i2_putch E48 0 CODE 0 text17 dist/default/debug\FINAL.X.debug.o
+keyboard_input@str 88 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\FINAL.X.debug.o
+_TRISAbits F92 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_TRISCbits F94 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__pcstackBANK0 80 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+_IPR1bits F9F 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__end_of_printf 10A8 0 CODE 0 text13 dist/default/debug\FINAL.X.debug.o
+_Initialize C8E 0 CODE 0 text2 dist/default/debug\FINAL.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+_buffer_size 39 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+fputc@fp 3F 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\FINAL.X.debug.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\FINAL.X.debug.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\FINAL.X.debug.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\FINAL.X.debug.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\FINAL.X.debug.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\FINAL.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\FINAL.X.debug.o
+__Hconst 0 0 CONST 0 const dist/default/debug\FINAL.X.debug.o
+__end_of_strcpy 102C 0 CODE 0 text4 dist/default/debug\FINAL.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/default/debug\FINAL.X.debug.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/debug\FINAL.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\FINAL.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\FINAL.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\FINAL.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/default/debug\FINAL.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/default/debug\FINAL.X.debug.o
+__Htext1 0 0 ABS 0 text1 dist/default/debug\FINAL.X.debug.o
+__Htext2 0 0 ABS 0 text2 dist/default/debug\FINAL.X.debug.o
+__Htext3 0 0 ABS 0 text3 dist/default/debug\FINAL.X.debug.o
+__Htext4 0 0 ABS 0 text4 dist/default/debug\FINAL.X.debug.o
+__Htext5 0 0 ABS 0 text5 dist/default/debug\FINAL.X.debug.o
+__Htext7 0 0 ABS 0 text7 dist/default/debug\FINAL.X.debug.o
+__Htext8 0 0 ABS 0 text8 dist/default/debug\FINAL.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\FINAL.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\FINAL.X.debug.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/debug\FINAL.X.debug.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+?_GetString 8C 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+__Hcomram 0 0 ABS 0 comram dist/default/debug\FINAL.X.debug.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/debug\FINAL.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\FINAL.X.debug.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\FINAL.X.debug.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\FINAL.X.debug.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\FINAL.X.debug.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\FINAL.X.debug.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\FINAL.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\FINAL.X.debug.o
+__Lconst 0 0 CONST 0 const dist/default/debug\FINAL.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/default/debug\FINAL.X.debug.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/debug\FINAL.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\FINAL.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\FINAL.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\FINAL.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/default/debug\FINAL.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\FINAL.X.debug.o
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\FINAL.X.debug.o
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\FINAL.X.debug.o
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\FINAL.X.debug.o
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\FINAL.X.debug.o
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\FINAL.X.debug.o
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\FINAL.X.debug.o
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\FINAL.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\FINAL.X.debug.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\FINAL.X.debug.o
+_INTCONbits FF2 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\FINAL.X.debug.o
+__Hdata 0 0 ABS 0 data dist/default/debug\FINAL.X.debug.o
+__Hheap 0 0 HEAP 7 heap dist/default/debug\FINAL.X.debug.o
+__Hinit 70 0 CODE 0 init dist/default/debug\FINAL.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\FINAL.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\FINAL.X.debug.o
+__Htemp 62 0 COMRAM 1 temp dist/default/debug\FINAL.X.debug.o
+__Htext 0 0 ABS 0 text dist/default/debug\FINAL.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\FINAL.X.debug.o
+__Ldata 0 0 ABS 0 data dist/default/debug\FINAL.X.debug.o
+__Lheap 0 0 HEAP 7 heap dist/default/debug\FINAL.X.debug.o
+__Linit 6C 0 CODE 0 init dist/default/debug\FINAL.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\FINAL.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\FINAL.X.debug.o
+__Ltemp 61 0 COMRAM 1 temp dist/default/debug\FINAL.X.debug.o
+__Ltext 0 0 ABS 0 text dist/default/debug\FINAL.X.debug.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+int$flags 61 0 COMRAM 1 temp dist/default/debug\FINAL.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Hintret 0 0 ABS 0 intret dist/default/debug\FINAL.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\FINAL.X.debug.o
+_PR2 FCB 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__S0 10AA 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__S1 164 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__S4 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__S5 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_buffer 100 0 BANK1 1 bssBANK1 dist/default/debug\FINAL.X.debug.o
+_ClearBuffer F3C 0 CODE 0 text5 dist/default/debug\FINAL.X.debug.o
+__end_of_Initialize D12 0 CODE 0 text2 dist/default/debug\FINAL.X.debug.o
+_keyboard_input 1074 0 CODE 0 text1 dist/default/debug\FINAL.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\FINAL.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\FINAL.X.debug.o
+__end_of_MyusartRead EFA 0 CODE 0 text7 dist/default/debug\FINAL.X.debug.o
+int_func B28 0 CODE 0 intcode_body dist/default/debug\FINAL.X.debug.o
+variable_register_changed@value 51 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\FINAL.X.debug.o
+strcpy@d 8B 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/debug\FINAL.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\FINAL.X.debug.o
+__activetblptr 1 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\FINAL.X.debug.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/debug\FINAL.X.debug.o
+__Htext10 0 0 ABS 0 text10 dist/default/debug\FINAL.X.debug.o
+__Htext11 0 0 ABS 0 text11 dist/default/debug\FINAL.X.debug.o
+__Htext12 0 0 ABS 0 text12 dist/default/debug\FINAL.X.debug.o
+__Htext13 0 0 ABS 0 text13 dist/default/debug\FINAL.X.debug.o
+__Htext14 0 0 ABS 0 text14 dist/default/debug\FINAL.X.debug.o
+__Htext15 0 0 ABS 0 text15 dist/default/debug\FINAL.X.debug.o
+__Htext16 0 0 ABS 0 text16 dist/default/debug\FINAL.X.debug.o
+__Htext17 0 0 ABS 0 text17 dist/default/debug\FINAL.X.debug.o
+__Htext18 0 0 ABS 0 text18 dist/default/debug\FINAL.X.debug.o
+__Htext19 0 0 ABS 0 text19 dist/default/debug\FINAL.X.debug.o
+__Htext20 0 0 ABS 0 text20 dist/default/debug\FINAL.X.debug.o
+vfpfcnvrt@fmt 48 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+___awmod@counter 40 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+_RCSTAbits FAB 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_PIE1bits F9D 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__end_of_set_LED_separately 1074 0 CODE 0 text12 dist/default/debug\FINAL.X.debug.o
+__ptext10 620 0 CODE 0 text10 dist/default/debug\FINAL.X.debug.o
+__ptext11 F7E 0 CODE 0 text11 dist/default/debug\FINAL.X.debug.o
+__ptext12 1056 0 CODE 0 text12 dist/default/debug\FINAL.X.debug.o
+__ptext13 108E 0 CODE 0 text13 dist/default/debug\FINAL.X.debug.o
+__ptext14 FBE 0 CODE 0 text14 dist/default/debug\FINAL.X.debug.o
+__ptext15 DE2 0 CODE 0 text15 dist/default/debug\FINAL.X.debug.o
+__ptext16 99C 0 CODE 0 text16 dist/default/debug\FINAL.X.debug.o
+__ptext17 E48 0 CODE 0 text17 dist/default/debug\FINAL.X.debug.o
+__ptext18 BE0 0 CODE 0 text18 dist/default/debug\FINAL.X.debug.o
+__ptext19 A66 0 CODE 0 text19 dist/default/debug\FINAL.X.debug.o
+__ptext20 10A8 0 CODE 0 text20 dist/default/debug\FINAL.X.debug.o
+___awdiv A66 0 CODE 0 text19 dist/default/debug\FINAL.X.debug.o
+___awmod BE0 0 CODE 0 text18 dist/default/debug\FINAL.X.debug.o
+__pintcode_body B28 0 CODE 0 intcode_body dist/default/debug\FINAL.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\FINAL.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\FINAL.X.debug.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/debug\FINAL.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/default/debug\FINAL.X.debug.o
+__Lconfig 0 0 CONFIG 4 config dist/default/debug\FINAL.X.debug.o
+_printf 108E 0 CODE 0 text13 dist/default/debug\FINAL.X.debug.o
+i2ClearBuffer@i 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__end_of_keyboard_input 108E 0 CODE 0 text1 dist/default/debug\FINAL.X.debug.o
+__Lsivt_hi 0 0 ABS 0 sivt_hi dist/default/debug\FINAL.X.debug.o
+__Lsivt_lo 0 0 ABS 0 sivt_lo dist/default/debug\FINAL.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\FINAL.X.debug.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+_strcpy FFC 0 CODE 0 text4 dist/default/debug\FINAL.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\FINAL.X.debug.o
+isa$std 1 0 ABS 0 - C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+stackhi 0 0 ABS 0 - C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+stacklo 0 0 ABS 0 - C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+__Lintcode 8 0 CODE 0 intcode dist/default/debug\FINAL.X.debug.o
+__Lintret 0 0 ABS 0 intret dist/default/debug\FINAL.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\FINAL.X.debug.o
+_set_LED_separately 1056 0 CODE 0 text12 dist/default/debug\FINAL.X.debug.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_ADCON1bits FC1 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_ADCON2bits FC0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+strcpy@dest 88 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Lspace_4 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+MyusartRead@data 82 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+_PIR1bits F9E 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+printf@ap 50 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+end_of_initialization 1044 0 CODE 0 cinit dist/default/debug\FINAL.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\FINAL.X.debug.o
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\FINAL.X.debug.o
+_RCONbits FD0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+fputc@c 3D 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+___awdiv@quotient 42 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+?___awdiv 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+?___awmod 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+vfprintf@fmt 4C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/debug\FINAL.X.debug.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/debug\FINAL.X.debug.o
+___awmod@dividend 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/debug\FINAL.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\FINAL.X.debug.o
+__pcinit 102C 0 CODE 0 cinit dist/default/debug\FINAL.X.debug.o
+vfpfcnvrt@ap 49 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+vfpfcnvrt@fp 46 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__ptext0 EFA 0 CODE 0 text0 dist/default/debug\FINAL.X.debug.o
+__ptext1 1074 0 CODE 0 text1 dist/default/debug\FINAL.X.debug.o
+__ptext2 C8E 0 CODE 0 text2 dist/default/debug\FINAL.X.debug.o
+__ptext3 D12 0 CODE 0 text3 dist/default/debug\FINAL.X.debug.o
+__ptext4 FFC 0 CODE 0 text4 dist/default/debug\FINAL.X.debug.o
+__ptext5 F3C 0 CODE 0 text5 dist/default/debug\FINAL.X.debug.o
+__ptext7 EAA 0 CODE 0 text7 dist/default/debug\FINAL.X.debug.o
+__ptext8 D7C 0 CODE 0 text8 dist/default/debug\FINAL.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\FINAL.X.debug.o
+vfprintf@ap 4D 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+vfprintf@fp 4A 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+vfprintf@cfmt 4E 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\FINAL.X.debug.o
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\FINAL.X.debug.o
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\FINAL.X.debug.o
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\FINAL.X.debug.o
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\FINAL.X.debug.o
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\FINAL.X.debug.o
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\FINAL.X.debug.o
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\FINAL.X.debug.o
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\FINAL.X.debug.o
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\FINAL.X.debug.o
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\FINAL.X.debug.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+_vfprintf FBE 0 CODE 0 text14 dist/default/debug\FINAL.X.debug.o
+__Lpowerup 6C 0 CODE 0 powerup dist/default/debug\FINAL.X.debug.o
+__end_of_variable_register_changed 99C 0 CODE 0 text10 dist/default/debug\FINAL.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\FINAL.X.debug.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/debug\FINAL.X.debug.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/debug\FINAL.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\FINAL.X.debug.o
+__end_of_vfprintf FFC 0 CODE 0 text14 dist/default/debug\FINAL.X.debug.o
+___heap_hi 0 0 ABS 0 - C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+___heap_lo 0 0 ABS 0 - C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+___param_bank 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\wanga\AppData\Local\Temp\xcAs8oo.\driver_tmp_14.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\FINAL.X.debug.o
+strcpy@src 89 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+__end_of__initialization 1044 0 CODE 0 cinit dist/default/debug\FINAL.X.debug.o
+__end_of_GetString D7C 0 CODE 0 text3 dist/default/debug\FINAL.X.debug.o
+___awmod@divisor 3E 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\FINAL.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\FINAL.X.debug.o
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/debug\FINAL.X.debug.o
+__pcstackCOMRAM 3C 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+_TXSTAbits FAC 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_GetString D12 0 CODE 0 text3 dist/default/debug\FINAL.X.debug.o
+__end_of_main F3C 0 CODE 0 text0 dist/default/debug\FINAL.X.debug.o
+__pintcode 8 0 CODE 0 intcode dist/default/debug\FINAL.X.debug.o
+__end_of_ClearBuffer F7E 0 CODE 0 text5 dist/default/debug\FINAL.X.debug.o
+__end_of_H_ISR BE0 0 CODE 0 intcode_body dist/default/debug\FINAL.X.debug.o
+printf@fmt 4F 0 COMRAM 1 cstackCOMRAM dist/default/debug\FINAL.X.debug.o
+_H_ISR 8 0 CODE 0 intcode dist/default/debug\FINAL.X.debug.o
+__end_of_fputc A66 0 CODE 0 text16 dist/default/debug\FINAL.X.debug.o
+ClearBuffer@i 88 0 BANK0 1 cstackBANK0 dist/default/debug\FINAL.X.debug.o
+_RCREG FAE 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_SPBRG FAF 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_TRISA F92 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_TRISB F93 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_TRISC F94 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+_TXREG FAD 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__end_of_putch DE2 0 CODE 0 text8 dist/default/debug\FINAL.X.debug.o
+__HRAM 0 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/default/debug\FINAL.X.debug.o
+__Hram 0 0 ABS 0 ram dist/default/debug\FINAL.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\FINAL.X.debug.o
+__LRAM 1 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/default/debug\FINAL.X.debug.o
+__Lram 0 0 ABS 0 ram dist/default/debug\FINAL.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\FINAL.X.debug.o
+_flags 3B 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+_fputc 99C 0 CODE 0 text16 dist/default/debug\FINAL.X.debug.o
+_putch D7C 0 CODE 0 text8 dist/default/debug\FINAL.X.debug.o
+_width 21 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+__Hsivt_hi 0 0 ABS 0 sivt_hi dist/default/debug\FINAL.X.debug.o
+__Hsivt_lo 0 0 ABS 0 sivt_lo dist/default/debug\FINAL.X.debug.o
+__end_ofi2_putch EAA 0 CODE 0 text17 dist/default/debug\FINAL.X.debug.o
+__initialization 102C 0 CODE 0 cinit dist/default/debug\FINAL.X.debug.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/debug\FINAL.X.debug.o
+_T2CONbits FCA 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\FINAL.X.debug.o
+__Hsmallconst 620 0 SMALLCONST 0 smallconst dist/default/debug\FINAL.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\FINAL.X.debug.o
+_button_pressed 10A8 0 CODE 0 text20 dist/default/debug\FINAL.X.debug.o
+_CCP1CONbits FBD 0 ABS 0 - dist/default/debug\FINAL.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\FINAL.X.debug.o
+__Hintcode E 0 CODE 0 intcode dist/default/debug\FINAL.X.debug.o
+_current_servo_angle 37 0 COMRAM 1 bssCOMRAM dist/default/debug\FINAL.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 58 1
+text10 0 620 620 A8A 1
+cstackBANK0 1 80 80 73 1
+reset_vec 0 0 0 4 1
+bssBANK1 1 100 100 64 1
+intcode 0 8 8 6 1
+smallconst 0 600 600 20 1
+bssCOMRAM 1 1 1 61 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

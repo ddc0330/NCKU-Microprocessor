@@ -1,0 +1,44 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Sep 19 09:36:25 2024
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000036
+                   .cinit    romdata   0x000036    program   0x000002
+.config_300001_BUILD/DEFAULT/DEBUG/BONUS.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/BONUS.O    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000037      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            58 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                       gg   0x00002c    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+                       m1   0x000028    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+                    plus1   0x000018    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+                    plus2   0x000020    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+                    start   0x000008    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    start   0x000008    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+                    plus1   0x000018    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+                    plus2   0x000020    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+                       m1   0x000028    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+                       gg   0x00002c    program     static C:\Users\wanga\MPLABXProjects\LAB1-1.X\bonus.asm
+
+

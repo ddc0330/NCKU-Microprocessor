@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug\2022.X.debug.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>32768</length>
+      <used>2304</used>
+      <free>30464</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>1536</length>
+      <used>308</used>
+      <free>1228</free>
+    </memory>
+  </executable>
+</project>

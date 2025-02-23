@@ -1,0 +1,90 @@
+#include "xc.inc"
+GLOBAL _multi_signed
+PSECT mytext, local, class=CODE, reloc=2
+ 
+_multi_signed:
+MOVLW 0xFF
+MOVWF 0x10    
+
+BTFSS 0x03,7 // <0,skip
+GOTO judgea
+MOVFF 0x03,WREG
+SUBWF 0x10,W
+INCF WREG
+MOVFF WREG,0x13
+GOTO outa
+judgea:
+MOVFF 0x03,0x13
+outa:
+BTFSS 0x04,7 // <0,skip
+GOTO judgeb
+MOVFF 0x04,WREG
+SUBWF 0x10,W
+INCF WREG
+MOVFF WREG,0x14
+GOTO outb
+judgeb:
+MOVFF 0x04,0x14
+outb:
+
+//Multiple
+//MOVFF 0x14,WREG
+//MULWF 0x13
+//MOVFF PRODH,0x02
+//MOVFF PRODL,0x01
+
+MOVLW 0x00
+MOVWF 0x12
+MOVLW 0x08
+MOVWF 0x15
+MOVLW 0x00
+MOVWF 0x01
+MOVLW 0x00
+MOVWF 0x02
+loop:
+BTFSS 0x14,0
+GOTO movemul
+MOVFF 0x13,WREG
+ADDWF 0x01
+BTFSS STATUS , 0
+GOTO nocurry
+INCF 0x02 //have curry
+nocurry:
+MOVFF 0x12,WREG
+ADDWF 0x02
+movemul:
+RLNCF 0x12
+BTFSS 0x13,7
+GOTO zeroo 
+GOTO onee
+zeroo:
+MOVLW 0xFE
+ANDWF 0x12
+GOTO last
+onee:
+MOVLW 0x01
+IORWF 0x12
+last:
+RLNCF 0x13
+BCF 0x13 , 0
+
+RRNCF 0x14
+BCF 0x14 , 7
+DECFSZ 0x15
+GOTO loop
+    
+    
+MOVFF 0x04,WREG
+XORWF 0x03,W
+BTFSS WREG,7 // <0,skip
+GOTO endgame
+MOVFF 0x01,WREG
+SUBWF 0x10,W
+INCF WREG
+MOVFF WREG,0x01
+MOVFF 0x02,WREG
+SUBWF 0x10,W
+MOVFF WREG,0x02
+endgame:
+RETURN
+

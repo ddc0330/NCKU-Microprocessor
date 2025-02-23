@@ -1,0 +1,16 @@
+List p=18f4520
+    #include<p18f4520.inc>
+        CONFIG OSC = INTIO67
+        CONFIG WDT = OFF
+        org 0x00
+MOVLW b'11001000'
+MOVWF TRISA
+;left rotate	
+RLNCF TRISA, F
+BCF TRISA ,0
+;right rotate
+MOVLW b'10000000'
+ANDWF TRISA ,WREG
+RRNCF TRISA, F
+ADDWF TRISA
+end

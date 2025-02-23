@@ -1,0 +1,11 @@
+Warning[205] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 1 : Found directive in column 1. (List)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 6 : Found opcode in column 1. (MOVLW)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 7 : Found opcode in column 1. (MOVWF)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 9 : Found opcode in column 1. (RLNCF)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 10 : Found opcode in column 1. (BCF)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 12 : Found opcode in column 1. (MOVLW)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 13 : Found opcode in column 1. (ANDWF)
+Warning[202] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 13 : Argument out of range.  Least significant bits used.
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 14 : Found opcode in column 1. (RRNCF)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 15 : Found opcode in column 1. (ADDWF)
+Warning[205] C:\USERS\WANGA\MPLABXPROJECTS\LAB3.X\BASIC.ASM 16 : Found directive in column 1. (end)

@@ -1,0 +1,9 @@
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 59 : Found label after column 1. (COUNTER)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 60 : Found label after column 1. (TEMP)
+Warning[203] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 62 : Found opcode in column 1. (GOTO)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 70 : Found label after column 1. (next)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 76 : Found label after column 1. (s1)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 82 : Found label after column 1. (s2)
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 88 : Found label after column 1. (s3)
+Warning[202] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 107 : Argument out of range.  Least significant bits used.
+Warning[205] C:\USERS\WANGA\MPLABXPROJECTS\LAB7.X\ADVANCE.ASM 125 : Found directive in column 1. (end)

@@ -1,0 +1,68 @@
+List p=18f4520
+
+    #include<p18f4520.inc>
+        CONFIG OSC = INTIO67
+        CONFIG WDT = OFF
+        org 0x00 
+LFSR 0, 0x000
+MOVLW 0x00
+MOVWF POSTINC0
+MOVLW 0x11
+MOVWF POSTINC0
+MOVLW 0x22
+MOVWF POSTINC0
+MOVLW 0x33
+MOVWF POSTINC0
+MOVLW 0x44
+MOVWF POSTINC0
+MOVLW 0x55
+MOVWF POSTINC0
+MOVLW 0x66
+MOVWF POSTINC0
+
+;loop	
+MOVLW 0x0 
+MOVWF 0x20 ;l
+MOVLW 0x06
+MOVWF 0x21 ;r
+LFSR 0, 0x000
+whi:
+MOVFF 0x21,WREG
+CPFSGT 0x20 ;l>r skip
+GOTO whiin
+GOTO whiend
+whiin:
+;mid
+MOVFF 0x21,WREG
+ADDWF 0x20 ,WREG
+RRNCF WREG
+MOVWF 0x22
+MOVLW b'00001111'
+ANDWF 0x22
+;get mid value, save in 0x12
+MOVFF 0x22,WREG
+MOVFF PLUSW0,0x12
+;ifelse
+MOVLW 0x33 ;aim
+CPFSGT 0x12 
+GOTO smalloreq
+;larger
+MOVFF 0x22,0x21
+DECF 0x21
+BTFSC 0x21, 7 ;when r-1 < 0,r becomes +
+GOTO whiend
+GOTO whi
+smalloreq:
+CPFSEQ 0x12
+GOTO small
+;eqaul
+MOVLW 0xFF
+MOVWF 0x11
+GOTO whiend
+small:
+;less
+MOVFF 0x22,0x20
+INCF 0x20
+GOTO whi
+whiend:
+end

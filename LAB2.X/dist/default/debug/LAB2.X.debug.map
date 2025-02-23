@@ -1,0 +1,44 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Sep 26 10:07:40 2024
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000080
+                   .cinit    romdata   0x000080    program   0x000002
+.config_300001_BUILD/DEFAULT/DEBUG/BONUS.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/DEBUG/BONUS.O    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000081      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            132 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    small   0x000076    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+                smalloreq   0x000068    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+                      whi   0x00002c    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+                   whiend   0x000080    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+                    whiin   0x00003a    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      whi   0x00002c    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+                    whiin   0x00003a    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+                smalloreq   0x000068    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+                    small   0x000076    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+                   whiend   0x000080    program     static C:\Users\wanga\MPLABXProjects\LAB2.X\bonus.asm
+
+

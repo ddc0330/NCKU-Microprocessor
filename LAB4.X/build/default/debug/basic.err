@@ -1,0 +1,9 @@
+Warning[205] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 1 : Found directive in column 1. (List)
+Warning[206] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 44 : Found call to macro in column 1. (Sub_Mul)
+Warning[202] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 20 : Argument out of range.  Least significant bits used.
+Warning[202] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 26 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 31 : Found label after column 1. (dontdo)
+Warning[202] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 33 : Argument out of range.  Least significant bits used.
+Warning[202] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 36 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 38 : Found label after column 1. (endsub)
+Warning[205] C:\USERS\WANGA\MPLABXPROJECTS\LAB4.X\BASIC.ASM 45 : Found directive in column 1. (end)
