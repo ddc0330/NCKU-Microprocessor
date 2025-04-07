@@ -1,45 +1,51 @@
-# NCKU Microprocessor Labs
+# NCKU Microprocessor – PIC Assembly and Embedded C Labs
 
-This repository includes implementations for the microprocessor labs at National Cheng Kung University. Each lab explores different PIC microcontroller programming concepts, enhancing hands-on skills with assembly and C integration.
+This repository contains lab assignments for the **Microprocessor** course at **National Cheng Kung University (NCKU)**, focusing on embedded systems programming using **PIC microcontrollers** in both Assembly and C.
 
-## Labs Overview
+## Course Topics
 
-### Lab 1: Setup and Instruction Set
-- **Focus**: Basics of MPLAB X IDE, assembly operations, and instruction set.
-- **Tasks**: Basic arithmetic, conditional comparisons, bit manipulations.
+Through practical hands-on labs, this course explores the following microcontroller programming topics:
 
-### Lab 2: Addressing Modes
-- **Focus**: Using direct and indirect addressing modes.
-- **Tasks**: Sum memory values with indirect addressing, sort data, perform binary search.
+- Assembly-level programming using MPLAB X
+- Addressing modes and register manipulation
+- Bitwise operations and arithmetic computation
+- C–Assembly integration
+- Interrupts, timers, and real-time event handling
+- PWM motor control and ADC conversion
+- UART serial communication
 
-### Lab 3: Bitwise Operations and Multiplication
-- **Focus**: Bitwise manipulation and arithmetic/logical shifts.
-- **Tasks**: Perform shifts, 16-bit multiplication, calculate ceiling of base-2 logarithm.
+## 🧪 Labs Overview
 
-### Lab 4: Macros and Subroutines
-- **Focus**: Creating reusable macros and subroutines.
-- **Tasks**: Subtraction/multiplication macros, cross-product subroutine, Fibonacci calculation.
+| Lab | Focus Area | Description |
+|-----|------------|-------------|
+| **Lab 1** | Instruction Set Basics | Arithmetic, bitwise logic, and flag handling |
+| **Lab 2** | Addressing Modes | Direct/indirect access, summation, and binary search |
+| **Lab 3** | Bitwise & Math | Logical shifts, 16-bit multiplication, base-2 logs |
+| **Lab 4** | Macros & Subroutines | Custom math macros, Fibonacci, cross products |
+| **Lab 5** | C–Assembly Integration | Math functions: ceil, sqrt, GCD with mixed code |
+| **Lab 6** | LED & Button I/O | LED control, bouncing button handling |
+| **Lab 7** | Interrupts & Timers | State-driven LED patterns with timer interrupts |
+| **Lab 8** | Motor Control | PWM-based servo movement from -90° to +90° |
+| **Lab 9** | ADC & PWM Brightness | Analog resistor input, binary display, ID digits |
+| **Lab 10** | UART Communication | Serial I/O, LED control via keyboard commands |
 
-### Lab 5: C and Assembly Integration
-- **Focus**: Combine C with assembly for mathematical functions.
-- **Tasks**: Implement ceil(sqrt(a)), GCD, and signed multiplication functions.
+## 📁 Repository Structure
 
-### Lab 6: LED Control and Button Debouncing
-- **Focus**: LED control, button debouncing, and handling input signals.
-- **Tasks**: Control LED states, resolve button bounce issues, create responsive patterns.
+```
+NCKU-Microprocessor/
+│
+├── LAB1.X/       # Instruction set basics
+├── LAB2.X/       # Addressing modes
+├── LAB3.X/       # Bitwise ops and math
+├── LAB4.X/       # Macros and subroutines
+├── LAB5.X/       # C + Assembly functions
+├── LAB6.X/       # LED/Button control
+├── LAB7.X/       # Interrupts and timers
+├── LAB8.X/       # PWM motor control
+├── LAB9.X/       # ADC with LED control
+├── LAB10.X/      # UART-based LED I/O
+├── FINAL.X/      # Final integrated project
+└── README.md     # Course overview
+```
 
-### Lab 7: Interrupt-Driven LED Control and Timer-Based Patterns
-- **Focus**: Utilize interrupts and timers for advanced LED control and state-based functionality.
-- **Tasks**: Toggle LED states, implement a cyclic counter with timers, and add multi-state patterns controlled by a button.
-
-### Lab 8: Motor Control with CCP Module
-- **Focus**: Utilize the Capture/Compare/PWM (CCP) module for motor control using button input and PWM configuration.
-- **Tasks**: Control motor rotation between -90° and +90°, implement smooth transitions for intermediate positions, and create continuous motion loops.
-
-### Lab 9: Analog-to-Digital Conversion (ADC)  
-- **Focus**: Use ADC to process resistor input and control LEDs.  
-- **Tasks**: Display part of your student ID, show odd/even binary numbers, and adjust LED brightness using PWM based on resistor input.  
-
-### Lab 10: UART Communication and Control  
-- **Focus**: Implement UART communication to interact with hardware using serial input and output.  
-- **Tasks**: Verify UART functionality, echo keyboard input on a terminal, light LEDs for numbers (0–9), and create a button-controlled cyclic LED counter.  
+Each lab includes `.c` or `.s` source files and project configuration for MPLAB X IDE.
