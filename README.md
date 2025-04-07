@@ -49,3 +49,7 @@ NCKU-Microprocessor/
 ```
 
 Each lab includes `.c` or `.s` source files and project configuration for MPLAB X IDE.
+
+## Demo
+
+ **[▶️ Demo Vedio : Microprocessor Final Project](https://youtu.be/ijIDFocRmrQ)**  
